@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+    <!-- Top balk -->
+<body>
+    <header>
+        <div class="container"> <!-- css container voor de header -->
+            <div class="logo">Portfolio</div>
+            <nav>  <!-- een set van links naar verschillende secties van de pagina -->
+                 <ul> <!-- list -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Profile section -->
+
+    <section id="home" class="Wen">
+        <div class="container">
+    
+            <!-- Basis informatie over de persoon -->
+            <div class="Wen-content">
+                <h1>Hi, I'm <span class="highlight">Flopper</span></h1> <!--  Wen Rui gehighlighted door de class highlight -->
+                <h2>L Developer</h2>
+                <p>ezggwp</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+
+            <!-- Foto -->
+            <div class="Wen-image">
+                <img src="images/water.png" alt="Profile Image Samurai"> 
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+
+                <!-- About Me Foto -->	
+                <div class="about-image">
+                    <img src="images/blue.jpg" alt="About Me">
+                </div>
+
+                <!-- Header -->
+                <div class="about-text">
+                    <h2><strong>I am the one who codes</strong></h2> <!--  strong tag to make bold  -->
+                    <p>I am either sleeping or sleeping</p>
+
+                     <!-- Details    -->
+                    <div class="about-details">
+                        <div>
+                            <h3>Name:</h3>
+                            <p>Wen Rui Chi Ray Marquis  </p>
+                        </div>
+                        <div>
+                            <h3>Email:</h3>
+                            <p>Wenruichibusiness@gmail.com</p>
+                        </div>
+                        <div>
+                            <h3>Experience:</h3>
+                            <p>2 months</p>
+                        </div>
+                        <div>
+                            <h3>Location:</h3>
+                            <p>Rotterdam, Netherlands</p>
+                        </div>
+                    </div>
+
+                    <a href="test.html" class="btn">Download my goated CV</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        
+        <!-- De container voor css -->
+        <div class="container">
+
+            <!-- Header -->
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container"> 
+
+            <!-- Details Skilss -->
+
+                <!-- HTML BAR -->
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>HTML</h3>
+                        <span>89%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress html"></div>
+                    </div>
+
+                </div>
+
+                <!-- CSS BAR -->
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>CSS</h3>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress css"></div>
+                    </div>
+                </div>
+
+                <!-- JAVASCRIPT BAR -->
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>JavaScript</h3>
+                        <span>71%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress js"></div>
+                    </div>
+                </div>
+
+                <!-- FRONT END BAR -->
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>Front End</h3>
+                        <span>69%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress front"></div>
+                    </div>
+                </div>
+
+                <!-- BACK END BAR -->
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>Back End</h3>
+                        <span>10%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress end"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+
+        <!-- De container voor css -->
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+
+            <!-- Filter de div elements op basis van de class -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+            </div>
+
+            <!-- Project Grid css -->
+            <div class="projects-grid">
+
+            <!-- When hover -> overlay met project website naam en beschrijving -->
+                
+                <!-- Project Website  -->
+                <div class="project-item" data-category="web">
+                    <img src="images/project1.png" alt="Project 1">
+                     <div class="project-overlay"> <!-- Overlay voor css  -->
+                        <h3>Website CV </h3>
+                        <p>Full-featured online website</p>
+                        <a href="index.html" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Memory game -->
+                <div class="project-item" data-category="app">
+                    <img src="images/project2.png" alt="Project 2">
+                    <div class="project-overlay">
+                        <h3>Card Game</h3>
+                        <p>Memory game application</p>
+                        <a href="card.html" class="project-link">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Project Agenda -->
+                <div class="project-item" data-category="web">
+                    <img src="images/project3.png" alt="Project 3">
+                    <div class="project-overlay">
+                        <h3>Agenda</h3>
+                        <p>Agenda and To Do app</p>
+                        <a href="agenda.html" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Coming soon-->
+                <div class="project-item" data-category="data">
+                    <img src="images/project4.png" alt="Project 4">
+                    <div class="project-overlay">
+                        <h3>COMING SOON</h3>
+                        <p>Data Dashboard</p>
+                        <a href="data.html" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <!-- Css styling voor de contact sectie -->
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to me for any questions or opportunities.</p>
+
+                    <!-- Email -->
+                    <div class="info-item">
+                        <i class="fas fa-envelope">
+                            <img src="images/profile.jpg" alt="github" style="width:40px; height:40px; border-radius:50%;">
+                        </i>
+                        <span>823169@student.lmc-vo.nl</span>
+                    </div>
+
+                    <!-- Nummer -->
+                    <div class="info-item">
+                        <i class="fas fa-phone">
+                            <img src="images/profile.jpg" alt="github" style="width:40px; height:40px; border-radius:50%;">
+                        </i>
+                        <span>+31 69696969</span>
+                    </div>
+
+                    <!-- Locatie -->
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt">
+                            <img src="images/profile.jpg" alt="github" style="width:40px; height:40px; border-radius:50%;">
+                        </i>
+                        <span>Rotterdam, Netherlands</span>
+                    </div>
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i>
+                        <img src="images/profile.jpg" alt="github" style="width:40px; height:40px; border-radius:50%;"> <!--  Geleerd hoe je een circle shaped styled -->
+                        </a>
+                        <a href="#"><i class="fab fa-linkedin"></i>
+                        <img src="images/profile.jpg" alt="github" style="width:40px; height:40px; border-radius:50%;"> <!--  Geleerd hoe je een circle shaped styled -->
+                        </a>
+                        <a href="#"><i class="fab fa-twitter"></i>
+                        <img src="images/profile.jpg" alt="github" style="width:40px; height:40px; border-radius:50%;"> <!--  Geleerd hoe je een circle shaped styled -->
+                        </a>
+                        
+                        <a href="#"><i class="fab fa-instagram"></i>
+                        <img src="images/profile.jpg" alt="github" style="width:40px; height:40px; border-radius:50%;"> <!--  Geleerd hoe je een circle shaped styled -->
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form voor decoratie -->
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <a href="agenda.html">Go to About Page</a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025. All Rights Reserved. EFEFFEFEFEEF</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
